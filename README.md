@@ -48,6 +48,7 @@ This project was made using the follow technologies:
 
 -   NextJS
 -   ReactJS
+-   Typescript
 -   Styled Components
 -   Firebase
 -   Vercel
