@@ -19,8 +19,8 @@
 </p>
 
 <div align="center">
-  <sub>empreguei. Built with 💙 by
-    <a href="https://github.com/Yagasaki7K">Anderson Marlon</a> and
+  <sub>Empreguei. Built with 💙 by
+    <a href="https://github.com/KalifyInc">Kalify Inc</a> and
     <a href="https://github.com/Yagasaki7K/website-empreguei/graphs/contributors">
       contributors
     </a>
