@@ -6,22 +6,22 @@
    <a href="https://github.com/Yagasaki7K">
       <img alt="Kalify Inc" src="https://img.shields.io/badge/-KalifyInc-1877f2?style=flat&logo=Github&logoColor=white" />
    </a>
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Yagasaki7K/website-findyourpet?color=1877f2">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Yagasaki7K/website-empreguei?color=1877f2">
 
-  <a href="https://github.com/Yagasaki7K/website-findyourpet/commits/main">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Yagasaki7K/website-findyourpet?color=1877f2">
+  <a href="https://github.com/Yagasaki7K/website-empreguei/commits/main">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Yagasaki7K/website-empreguei?color=1877f2">
   </a>
   <img alt="License" src="https://img.shields.io/badge/license-MIT-1877f2">
-  <img alt="GitHub Pull Requests" src="https://img.shields.io/github/issues-pr/Yagasaki7K/website-findyourpet?color=1877f2" />
-  <a href="https://github.com/Yagasaki7K/website-findyourpet/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/Yagasaki7K/website-findyourpet?color=1877f2&logo=github">
+  <img alt="GitHub Pull Requests" src="https://img.shields.io/github/issues-pr/Yagasaki7K/website-empreguei?color=1877f2" />
+  <a href="https://github.com/Yagasaki7K/website-empreguei/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/Yagasaki7K/website-empreguei?color=1877f2&logo=github">
   </a>
 </p>
 
 <div align="center">
-  <sub>FindYourPet. Built with 💙 by
-    <a href="https://github.com/Yagasaki7K">Kalify Inc</a> and
-    <a href="https://github.com/Yagasaki7K/mobile-findyourpet/graphs/contributors">
+  <sub>empreguei. Built with 💙 by
+    <a href="https://github.com/Yagasaki7K">Anderson Marlon</a> and
+    <a href="https://github.com/Yagasaki7K/website-empreguei/graphs/contributors">
       contributors
     </a>
   </sub>
