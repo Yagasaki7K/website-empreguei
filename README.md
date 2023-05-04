@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-   <a href="https://github.com/Yagasaki7K">
+   <a href="https://github.com/KalifyInc">
       <img alt="Kalify Inc" src="https://img.shields.io/badge/-KalifyInc-1877f2?style=flat&logo=Github&logoColor=white" />
    </a>
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/Yagasaki7K/website-empreguei?color=1877f2">
