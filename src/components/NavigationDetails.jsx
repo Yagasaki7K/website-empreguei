@@ -14,17 +14,13 @@ const NavigationDetails = styled.div`
         width: 325px;
     }
 
-    p { 
-        a {
-            :hover {
-                transition: 1s;
-                border-bottom: 1px solid #fff;
-            }
-        }
-    }
-
     .active {
         font-weight: bold;
+        border-bottom: 1px solid #fff;
+
+        :hover {
+            border-bottom: 0;
+        }
     }
 
     @media (prefers-color-scheme: dark) {
