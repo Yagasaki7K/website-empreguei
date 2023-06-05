@@ -13,7 +13,7 @@ const Navigation = (isOtherPage) => {
 
     return (
         <NavigationDetails>
-            <a href="#"><img src="/logo-white.png" alt="Empreguei" /></a>
+            <a href="/"><img src="/logo-white.png" alt="Empreguei" /></a>
 
             {
                 isOtherPage ?

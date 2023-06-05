@@ -5,7 +5,7 @@ import styled from 'styled-components'
 const Slide = () => {
     return (
         <SlideDetails>
-            <p>Aqui você encontra <br /> O emprego dos sonhos!</p>
+            <p>Aqui você encontra <br /> O emprego que você precisa!</p>
         </SlideDetails>
     )
 }
