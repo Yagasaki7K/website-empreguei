@@ -1,6 +1,7 @@
 'use client'
 import Navigation from "@/components/Navigation";
 import SignUpDetails from "@/components/SignUpDetails";
+import Footer from "@/components/Footer";
 
 const SignUp = () => {
     return (
@@ -83,7 +84,8 @@ const SignUp = () => {
 
                     </form>
                 </div>
-            </SignUpDetails >
+            </SignUpDetails>
+            <Footer />
         </div >
     );
 };

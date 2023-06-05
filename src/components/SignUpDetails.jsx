@@ -1,11 +1,17 @@
 import styled from 'styled-components'
 
 const SignUpDetails = styled.div`
+    background: var(--bg-light);
+
+    @media (prefers-color-scheme: dark) {
+        background: var(--bg-dark);
+    }
+
     .container {
         background: var(--bg-light-alt);
         width: 75%;
-        margin: 2rem auto;
-        padding: 1rem;
+        margin: 0rem auto;
+        padding: 2rem 1rem;
         border-radius: 8px;
 
         h1 {
@@ -78,8 +84,8 @@ const SignUpDetails = styled.div`
 
             .content-button {
                 button {
-                    margin: 1rem 0.5rem;
-                    padding: 0.5rem;
+                    margin: 1rem 2.6rem;
+                    padding: 0.8rem;
                     border-radius: 8px;
                     border-style: none;
                     color: var(--font-dark-alt);
