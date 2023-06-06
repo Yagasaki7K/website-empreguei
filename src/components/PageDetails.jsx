@@ -19,10 +19,13 @@ const PageDetails = styled.div`
             padding: 1rem;
             font-size: 0.9rem;
             border-radius: 8px;
+            color: var(--font-dark-alt);
         }
 
         @media (prefers-color-scheme: dark) {
             background: var(--bg-dark-alt);
+
+            .advice {}
 
             h1 {
                 color: #8BE9FD;

@@ -35,6 +35,7 @@ const SignUpDetails = styled.div`
 
             @media (max-width: 768px) {
                 flex-direction: column;
+                margin-left: 12%;
 
                 input, textarea, select {
                     width: 300px;
@@ -52,7 +53,7 @@ const SignUpDetails = styled.div`
             .rightForm {
                 display: flex;
                 flex-direction: column;
-                margin-top: 3rem;
+                margin-top: 3.5rem;
             }
 
             .content {
