@@ -31,9 +31,9 @@ const Navigation = (isOtherPage) => {
                     )
             }
 
-            <button id="theme-toggle" onClick={handleToggle}>
+            {/* <button id="theme-toggle" onClick={handleToggle}>
                 {colorScheme === 'light' ? 'dark mode' : 'light mode'}
-            </button>
+            </button> */}
         </NavigationDetails>
     )
 }

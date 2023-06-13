@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Footer = () => {
     return (
-        <FooterDetails>© 2015 - {new Date().getFullYear()} |&nbsp;<a href="/">Empreguei</a>&nbsp;by&nbsp;<a href="https://kalifyinc.vercel.app/" target="_blank" rel="noreferrer">Kalify Inc.</a></FooterDetails>
+        <FooterDetails>© 2023 - {new Date().getFullYear()} |&nbsp;<a href="/">Empreguei</a>&nbsp;by&nbsp;<a href="https://kalifyinc.vercel.app/" target="_blank" rel="noreferrer">Kalify Inc.</a></FooterDetails>
     )
 }
 
