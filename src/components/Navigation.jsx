@@ -13,7 +13,7 @@ const Navigation = (isOtherPage) => {
 
     return (
         <NavigationDetails>
-            <a href="/"><img src="/logo-white.png" alt="Empreguei" /></a>
+            <a href="/" id="nav"><img src="/logo-white.png" alt="Empreguei" /></a>
 
             {
                 isOtherPage ?
@@ -58,10 +58,6 @@ const NavigationDetails = styled.div`
     font-size: 16px;
 
     @media (max-width: 768px) {
-        padding: 0 2rem;
-    }
-
-    @media (max-width: 414px) {
         justify-content: center;
         flex-direction: column;
         height: 250px;

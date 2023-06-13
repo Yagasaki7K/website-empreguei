@@ -45,7 +45,7 @@ const SignUp = () => {
                 alert('Por favor, insira um email válido')
             } else {
                 await (postService.addPost(NewPosts))
-                location.href = "#title"
+                location.href = "#nav"
                 setShowConfetti(true);
 
                 setTimeout(() => {
