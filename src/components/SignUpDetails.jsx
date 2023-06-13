@@ -17,6 +17,12 @@ const SignUpDetails = styled.div`
         h1 {
             word-wrap: break-word;
             color: var(--font-light);
+
+            @media (max-width: 768px) {
+                margin-top: -2rem;
+                margin-left: -3rem;
+                width: 20rem;
+            }
         }
         
         @media (prefers-color-scheme: dark) {
@@ -39,12 +45,7 @@ const SignUpDetails = styled.div`
 
             @media (max-width: 768px) {
                 flex-direction: column;
-                margin-left: 12%;
-
-                input, textarea, select {
-                    width: 300px;
-                    padding: 0.3rem;
-                }
+                margin-left: 10%;
             }
 
             .leftForm {
@@ -58,11 +59,27 @@ const SignUpDetails = styled.div`
                 display: flex;
                 flex-direction: column;
                 margin-top: 3.5rem;
+
+                @media (max-width: 768px) {
+                    margin-top: 0rem;
+                }
             }
 
             .content {
                 display: flex;
                 flex-direction: column;
+
+                @media (max-width: 768px) {
+                    width: 20rem;
+                    label {
+                        margin-left: -3rem;
+                    }
+
+                    input, textarea, select {
+                        margin-left: -3rem;
+                        width: 200%;
+                    }
+                }
 
                 label {
                     margin-top: 1rem;
@@ -70,7 +87,7 @@ const SignUpDetails = styled.div`
 
                 input, textarea, select {
                     padding: 0.4rem;
-                    width: 400px;
+                    width: 100%;
                     border-radius: 8px;
                     border-style: none;
                     background: var(--bg-light);
@@ -104,6 +121,10 @@ const SignUpDetails = styled.div`
                         transition: 1s;
                         cursor: pointer;
                     }
+
+                    @media (max-width: 768px) {
+                        margin: 1rem 0.2rem -1rem 0.2rem;
+                    }
                 }
 
                 .yellow {
@@ -112,7 +133,6 @@ const SignUpDetails = styled.div`
 
                 .green {
                     background: var(--bg-green);
-                    
                 }
             }
         }
