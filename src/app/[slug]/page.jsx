@@ -32,8 +32,8 @@ const Page = () => {
                 // eslint-disable-next-line react/prop-types
                 Posts && Posts.map((post, index) => (
                     post.slug === slug ? (
-                        <PageDetails key={index}>
-                            <div className="container">
+                        <PageDetails>
+                            <div className="container" key={index}>
                                 <h1>{post.title} / {post.localCompany}</h1>
                                 <p>{post.date} - <small>{post.id}</small></p>
 

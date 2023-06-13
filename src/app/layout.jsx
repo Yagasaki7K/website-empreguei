@@ -2,7 +2,7 @@ import "./globals.css";
 import StyledComponentsRegistry from '../lib/registry';
 
 export const metadata = {
-  title: "Empreguei",
+  title: "Empreguei by Kalify Inc.",
   description: "O lugar para encontrar o emprego que você precisa",
 };
 
