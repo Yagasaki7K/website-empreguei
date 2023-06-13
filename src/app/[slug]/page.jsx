@@ -6,6 +6,8 @@ import React, { useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import { NextSeo } from 'next-seo'
 
+const imageSEO = 'https://empreguei.vercel.app/found-job.png'
+
 const Page = () => {
     const [Posts, setPosts] = useState([])
 
@@ -67,7 +69,7 @@ const Page = () => {
                                     description: post?.description,
                                     images: [
                                         {
-                                            url: 'https://i.imgur.com/KUqAZbs.png',
+                                            url: imageSEO,
                                             width: 1100,
                                             height: 546,
                                             alt: post.title,
