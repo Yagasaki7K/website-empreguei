@@ -22,6 +22,11 @@ const PageDetails = styled.div`
             color: var(--font-dark-alt);
         }
 
+        .subAdvice {
+            border-radius: 8px;
+            color: #8BE9FD;
+        }
+
         @media (prefers-color-scheme: dark) {
             background: var(--bg-dark-alt);
 

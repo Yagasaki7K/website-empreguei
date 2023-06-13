@@ -2,12 +2,13 @@ import { initializeApp } from "firebase/app";
 import { initializeFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: process.env.FIREBASE_API_KEY,
-  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.FIREBASE_PROJECT_ID,
-  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.FIREBASE_APP_ID,
+  apiKey: "AIzaSyCvyd0uZSUl7DE2FPIC_HGFBxKkaM8V9EI",
+  authDomain: "empreguei-13685.firebaseapp.com",
+  projectId: "empreguei-13685",
+  storageBucket: "empreguei-13685.appspot.com",
+  messagingSenderId: "118270187235",
+  appId: "1:118270187235:web:750bd87c22cc96f59d17d6",
+  measurementId: "G-N0XRDGR8ZL",
 };
 
 const app = initializeApp(firebaseConfig);

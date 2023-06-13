@@ -16,6 +16,7 @@ const SignUp = () => {
     const [experienceJob, setExperienceJob] = useState('');
     const [localJob, setLocalJob] = useState('');
     const [localCompany, setLocalCompany] = useState('');
+    const [emailCompany, setEmailCompany] = useState('');
     const [nameCompany, setNameCompany] = useState('');
     const [salary, setSalary] = useState('');
     const [description, setDescription] = useState('');
@@ -29,6 +30,7 @@ const SignUp = () => {
             typeJob,
             localJob,
             localCompany,
+            emailCompany,
             nameCompany,
             salary,
             description,
@@ -44,7 +46,7 @@ const SignUp = () => {
             setShowConfetti(true);
 
             setTimeout(() => {
-                location.assign(`/${slug}`)
+                location.assign(slug)
             }, 3000);
         }
     }
@@ -55,7 +57,7 @@ const SignUp = () => {
         let slug = title.toLowerCase().replace(/ /g, '-')
             .replace(/[^\w-]+/g, '');
 
-        setSlug(slug)
+        setSlug('/' + slug + '-' + nameCompany)
     }
 
     function collectData() {
@@ -74,11 +76,14 @@ const SignUp = () => {
         const title = document.getElementById('title').value;
         setTitle(title)
 
-        const localCompany = document.getElementById('localCompany').value;
-        setLocalCompany(localCompany)
-
         const nameCompany = document.getElementById('nameCompany').value;
         setNameCompany(nameCompany)
+
+        const emailCompany = document.getElementById('emailCompany').value;
+        setEmailCompany(emailCompany)
+
+        const localCompany = document.getElementById('localCompany').value;
+        setLocalCompany(localCompany)
 
         const salary = document.getElementById('salary').value;
         setSalary(salary)
@@ -112,6 +117,11 @@ const SignUp = () => {
                             <div className="content">
                                 <label>Nome da Empresa:</label>
                                 <input type="text" name="nameCompany" id="nameCompany" />
+                            </div>
+
+                            <div className="content">
+                                <label>Email de Contato:</label>
+                                <input type="email" name="emailCompany" id="emailCompany" placeholder="example@empresa.com.br" />
                             </div>
 
                             <div className="content">
