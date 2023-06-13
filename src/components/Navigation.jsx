@@ -15,21 +15,8 @@ const Navigation = (isOtherPage) => {
         <NavigationDetails>
             <a href="/" id="nav"><img src="/logo-white.png" alt="Empreguei" /></a>
 
-            {
-                isOtherPage ?
-                    (
-                        <>
-                            <p><a href="/">ver vagas</a></p>
-                            <p className="active"><a href="/anunciar">anunciar vagas</a></p>
-                        </>
-                    ) :
-                    (
-                        <>
-                            <p className="active"><a href="/">ver vagas</a></p>
-                            <p><a href="/anunciar">anunciar vagas</a></p>
-                        </>
-                    )
-            }
+            <p className="active"><a href="/">veja todas as vagas 🡇</a></p>
+            <p className="active"><a href="/anunciar">publique suas vagas 🡅</a></p>
 
             {/* <button id="theme-toggle" onClick={handleToggle}>
                 {colorScheme === 'light' ? 'dark mode' : 'light mode'}
@@ -73,11 +60,6 @@ const NavigationDetails = styled.div`
 
     .active {
         font-weight: bold;
-        border-bottom: 1px solid #fff;
-
-        :hover {
-            border-bottom: 0;
-        }
     }
 
 /* CSS */
