@@ -35,10 +35,11 @@ const CardDetails = styled.div`
 
         box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
         border-radius: 32px;
-        padding: 2rem;
+        padding: 1.5rem 2rem;
 
         h3 {
             margin-right: 1rem;
+            margin-top: -1rem;
             max-width: 12rem;
             word-wrap: break-word;
             display: -webkit-box;

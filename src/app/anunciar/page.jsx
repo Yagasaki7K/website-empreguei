@@ -57,7 +57,10 @@ const SignUp = () => {
         let slug = title.toLowerCase().replace(/ /g, '-')
             .replace(/[^\w-]+/g, '');
 
-        setSlug('/' + slug + '-' + nameCompany)
+        let slugCompany = nameCompany.toLowerCase().replace(/ /g, '-')
+            .replace(/[^\w-]+/g, '');
+
+        setSlug('/' + slug + '-' + slugCompany)
     }
 
     function collectData() {

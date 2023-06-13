@@ -29,9 +29,9 @@ const Home = () => {
                         <a href={post.slug} key={index}>
                             <div className="card">
                                 <div className="card-header">
-                                    <h3>{post.title} • {post.experienceJob}</h3>
                                     <p>{post.date}</p>
-                                    <p>{post.typeJob} • {post.localJob}</p>
+                                    <h3>{post.title}</h3>
+                                    <p>{post.experienceJob} • {post.typeJob} • {post.localJob}</p>
                                     <p><b>Salário</b>: <span>R$ {post.salary}</span></p>
                                     <p><b>Empresa</b>: <span>{post.nameCompany}</span></p>
                                     <p><b>Local</b>: <span>{post.localCompany}</span></p>
