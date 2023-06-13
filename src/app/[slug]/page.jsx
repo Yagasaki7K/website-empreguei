@@ -4,6 +4,7 @@ import PageDetails from '@/components/PageDetails'
 import postService from "@/services/post.service";
 import React, { useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
+import { NextSeo } from 'next-seo'
 
 const Page = () => {
     const [Posts, setPosts] = useState([])
