@@ -38,16 +38,20 @@ const SignUp = () => {
             experienceJob,
         }
 
-        if (!title || !typeJob || !localJob || !localCompany || !nameCompany || !salary || !description || !requirements || !experienceJob) {
+        if (!title || !typeJob || !localJob || !localCompany || !nameCompany || !salary || !description || !requirements || !experienceJob || !emailCompany) {
             alert('Por favor, preencha todos os campos')
         } else {
-            await (postService.addPost(NewPosts))
-            location.href = "#title"
-            setShowConfetti(true);
+            if (emailCompany.indexOf('@') === -1 || emailCompany.indexOf('.') === -1) {
+                alert('Por favor, insira um email válido')
+            } else {
+                await (postService.addPost(NewPosts))
+                location.href = "#title"
+                setShowConfetti(true);
 
-            setTimeout(() => {
-                location.assign(slug)
-            }, 3000);
+                setTimeout(() => {
+                    location.assign(slug)
+                }, 3000);
+            }
         }
     }
 

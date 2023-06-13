@@ -22,6 +22,10 @@ const SignUpDetails = styled.div`
         @media (prefers-color-scheme: dark) {
             background: var(--bg-dark-alt);
 
+            @media (max-width: 1080px) {
+                background: var(--bg-dark);
+            }
+
             h1 {
                 color: var(--font-ocean);
                 text-transform: uppercase;

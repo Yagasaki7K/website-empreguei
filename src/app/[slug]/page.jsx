@@ -85,7 +85,7 @@ const Page = () => {
                                 }}
                             />
                         </PageDetails>
-                    ) : <p>404: Not Found</p>
+                    ) : null
                 ))
             }
         </div>
