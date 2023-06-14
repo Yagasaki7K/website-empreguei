@@ -10,7 +10,6 @@ const CardDetails = styled.div`
         justify-content: center;
         align-items: center;
         max-width: 75%;
-
         margin: 1rem 10rem;
 
         @media (max-width: 1024px) {
@@ -51,14 +50,28 @@ const CardDetails = styled.div`
                 text-overflow: ellipsis;
             }
 
-            :hover {
-                box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.35);
-                transition: 1s;
-                transform: scale(1.01);
+            button {
+                margin: 0.5rem 0rem -1rem 0rem;
+                padding: 0.8rem;
+                border-radius: 8px;
+                border-style: none;
+                background: var(--bg-green);
+                color: var(--font-dark-alt);
+                font-style: normal;
+                font-weight: 700;
+                font-size: 0.8rem;
+                text-align: center;
+                cursor: pointer;
+
+                @media (max-width: 768px) {
+                    margin: 1rem 0.2rem -1rem 0.2rem;
+                }
             }
         }
-
-        
+        :hover {
+            filter: contrast(1.2);
+            transition: 1s;
+        }
     }
     
     @media (prefers-color-scheme: dark) {

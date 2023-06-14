@@ -38,6 +38,7 @@ const Home = () => {
                                     <div className="card-body">
                                         <p><b>Requisitos</b>: <span>{post.requirements}</span></p>
                                     </div>
+                                    <button>Candidatar-se a vaga</button>
                                 </div>
                             </div>
                         </a>

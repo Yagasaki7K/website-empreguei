@@ -15,8 +15,8 @@ const Navigation = (isOtherPage) => {
         <NavigationDetails>
             <a href="/" id="nav"><img src="/logo-white.png" alt="Empreguei" /></a>
 
-            <p className="active"><a href="/">veja todas as vagas 🡇</a></p>
-            <p className="active"><a href="/anunciar">publique suas vagas 🡅</a></p>
+            <p className="active"><a href="/">veja todas as vagas</a></p>
+            <p className="active"><a href="/anunciar">publique suas vagas</a></p>
 
             {/* <button id="theme-toggle" onClick={handleToggle}>
                 {colorScheme === 'light' ? 'dark mode' : 'light mode'}
