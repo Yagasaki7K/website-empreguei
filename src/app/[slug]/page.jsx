@@ -36,7 +36,7 @@ const Page = () => {
                     post.slug === slug ? (
                         <PageDetails>
                             <div className="container" key={index}>
-                                <h1>{post.title} / {post.localCompany}</h1>
+                                <h1>{post.hasLinkedin ? <img src="/linkedin.png" width="25" alt="Essa vaga também está no Linkedin" /> : null} {post.title} / {post.localCompany}</h1>
                                 <p>{post.date} - <small>{post.id}</small></p>
 
                                 <div className="advice">
@@ -53,9 +53,12 @@ const Page = () => {
                                     <p><b>EMPRESA</b>: <span>{post.nameCompany}</span></p>
                                     <p><b>LOCAL</b>: <span>{post.localCompany}</span></p>
 
+                                    {post.hasLinkedin ? <p><img src="/linkedin.png" width="10" alt="Essa vaga também está no Linkedin" /> <b>Essa vaga também está no LinkedIn</b></p> : <p></p>}
+
                                     <p className="subAdvice">Os interessados deverão encaminhar o currículo para o e-mail de <a href={"mailto:" + post.emailCompany}><u>{post.emailCompany}</u></a> com o título: <strong>{post.title}</strong> no campo do assunto até o prazo de <b>sete dias</b> desde a data dessa publicação.</p>
 
                                     <button onClick={() => { getContactByMail(post.emailCompany) }}>Candidatar-se na vaga</button>
+                                    {post.hasLinkedin ? <button className="linkedin" onClick={() => { window.open(post.hasLinkedin) }}> Candidatar-se pelo LinkedIn <img src="/linkedin.png" width="12" alt="Essa vaga também está no Linkedin" /></button> : <p></p>}
                                 </div>
                             </div>
 

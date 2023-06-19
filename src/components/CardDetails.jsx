@@ -67,6 +67,11 @@ const CardDetails = styled.div`
                     margin: 1rem 0.2rem -1rem 0.2rem;
                 }
             }
+
+            .linkedin {
+                background: #2867B2;
+                margin-left: 1rem;
+            }
         }
         :hover {
             filter: contrast(1.2);

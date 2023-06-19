@@ -57,6 +57,11 @@ const PageDetails = styled.div`
                     transition: 1s;
                 }
             }
+
+            .linkedin {
+                background: #2867B2;
+                margin-left: 1rem;
+            }
         }
     }
 `

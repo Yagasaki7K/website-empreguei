@@ -21,6 +21,7 @@ const SignUp = () => {
     const [salary, setSalary] = useState('');
     const [description, setDescription] = useState('');
     const [requirements, setRequirements] = useState('');
+    const [hasLinkedin, setHasLinkedin] = useState('');
 
     async function sendData() {
         const NewPosts = {
@@ -36,6 +37,7 @@ const SignUp = () => {
             description,
             requirements,
             experienceJob,
+            hasLinkedin
         }
 
         if (!title || !typeJob || !localJob || !localCompany || !nameCompany || !salary || !description || !requirements || !experienceJob || !emailCompany) {
@@ -100,6 +102,9 @@ const SignUp = () => {
 
         const requirements = document.getElementById('requirements').value;
         setRequirements(requirements)
+
+        const hasLinkedin = document.getElementById('hasLinkedin').value;
+        setHasLinkedin(hasLinkedin)
 
         TitleToSlug()
     }
@@ -171,6 +176,11 @@ const SignUp = () => {
                                     <option>Pleno</option>
                                     <option>Sênior</option>
                                 </select>
+                            </div>
+
+                            <div className="content">
+                                <label>Linkedin da Vaga:</label>
+                                <input type="text" name="hasLinkedin" id="hasLinkedin" placeholder="https://www.linkedin.com/jobs/view/12345" />
                             </div>
                         </div>
 
