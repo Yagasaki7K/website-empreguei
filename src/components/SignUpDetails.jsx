@@ -115,6 +115,7 @@ const SignUpDetails = styled.div`
                     font-weight: 700;
                     font-size: 0.8rem;
                     text-align: center;
+                    cursor: pointer;
 
                     :hover {
                         opacity: 0.8;
