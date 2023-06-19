@@ -54,6 +54,18 @@ const SignUp = () => {
                     location.assign(slug)
                 }, 3000);
             }
+
+            if (hasLinkedin.indexOf('linkedin') === -1 || hasLinkedin.indexOf('.') === -1 || hasLinkedin.indexOf('jobs') === -1) {
+                alert('Por favor, insira um link da vaga de Linkedin válida')
+            } else {
+                await (postService.addPost(NewPosts))
+                location.href = "#nav"
+                setShowConfetti(true);
+
+                setTimeout(() => {
+                    location.assign(slug)
+                }, 3000);
+            }
         }
     }
 
