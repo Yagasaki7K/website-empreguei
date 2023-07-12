@@ -43,21 +43,16 @@ const SignUp = () => {
         if (!title || !typeJob || !localJob || !localCompany || !nameCompany || !salary || !description || !requirements || !experienceJob || !emailCompany) {
             alert('Por favor, preencha todos os campos')
         } else {
+
             if (emailCompany.indexOf('@') === -1 || emailCompany.indexOf('.') === -1) {
                 alert('Por favor, insira um email válido')
-            } else {
-                await (postService.addPost(NewPosts))
-                location.href = "#nav"
-                setShowConfetti(true);
-
-                setTimeout(() => {
-                    location.assign(slug)
-                }, 3000);
             }
 
             if (hasLinkedin.indexOf('linkedin') === -1 || hasLinkedin.indexOf('.') === -1 || hasLinkedin.indexOf('jobs') === -1) {
                 alert('Por favor, insira um link da vaga de Linkedin válida')
-            } else {
+            }
+
+            else {
                 await (postService.addPost(NewPosts))
                 location.href = "#nav"
                 setShowConfetti(true);
@@ -134,27 +129,27 @@ const SignUp = () => {
 
                             <h1>Cadastrar nova vaga</h1>
                             <div className="content">
-                                <label>Nome da vaga:</label>
+                                <label>Nome da vaga*:</label>
                                 <input type="text" name="title" id="title" />
                             </div>
 
                             <div className="content">
-                                <label>Nome da Empresa:</label>
+                                <label>Nome da Empresa*:</label>
                                 <input type="text" name="nameCompany" id="nameCompany" />
                             </div>
 
                             <div className="content">
-                                <label>Email de Contato:</label>
+                                <label>Email de Contato*:</label>
                                 <input type="email" name="emailCompany" id="emailCompany" placeholder="example@empresa.com.br" />
                             </div>
 
                             <div className="content">
-                                <label>Localidade da Empresa:</label>
+                                <label>Localidade da Empresa*:</label>
                                 <input type="text" name="localCompany" id="localCompany" placeholder="Cidade, Estado" />
                             </div>
 
                             <div className="content">
-                                <label>A vaga será:</label>
+                                <label>A vaga será*:</label>
                                 <select onChange={(e) => setLocalJob(e.target.value)} value={localJob}>
                                     <option></option>
                                     <option>Remota</option>
@@ -164,12 +159,12 @@ const SignUp = () => {
                             </div>
 
                             <div className="content">
-                                <label>Salário:</label>
+                                <label>Salário*:</label>
                                 <input type="text" name="salary" id="salary" placeholder="1.320,00" />
                             </div>
 
                             <div className="content">
-                                <label>Tipo de Contrato:</label>
+                                <label>Tipo de Contrato*:</label>
                                 <select onChange={(e) => setTypeJob(e.target.value)} value={typeJob}>
                                     <option></option>
                                     <option>CLT</option>
@@ -180,7 +175,7 @@ const SignUp = () => {
                             </div>
 
                             <div className="content">
-                                <label>Nível de Experiência:</label>
+                                <label>Nível de Experiência*:</label>
                                 <select onChange={(e) => setExperienceJob(e.target.value)} value={experienceJob}>
                                     <option></option>
                                     <option>Estágio</option>
@@ -198,12 +193,12 @@ const SignUp = () => {
 
                         <div className="rightForm">
                             <div className="content">
-                                <label>Descrição da vaga:</label>
+                                <label>Descrição da vaga*:</label>
                                 <textarea name="description" id="description" cols="30" rows="10" placeholder="Descreva toda a descrição da vaga .."></textarea>
                             </div>
 
                             <div className="content">
-                                <label>Requisitos e Benefícios da vaga:</label>
+                                <label>Requisitos e Benefícios da vaga*:</label>
                                 <textarea name="requirements" id="requirements" cols="30" rows="10" placeholder="Descreva todos os requisitos e benefícios da vaga .."></textarea>
                             </div>
 
