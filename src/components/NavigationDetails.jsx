@@ -6,12 +6,12 @@ export const NavigationDetails = styled.div`
     align-items: center;
     padding: 0 8rem;
     height: 80px;
-    background: ${({theme}) => theme.bg};
-    color: ${({theme}) => theme.font};
+    background: ${({ theme }) => theme.bg};
+    color: ${({ theme }) => theme.font};
 
     @media (prefers-color-scheme: dark) {
-        background: ${({theme}) => theme.bg};
-        color: ${({theme}) => theme.font};
+        background: ${({ theme }) => theme.bg};
+        color: ${({ theme }) => theme.font_alt};
     }
 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

@@ -5,6 +5,7 @@ import postService from "@/services/post.service";
 import React, { useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import { NextSeo } from 'next-seo'
+import Footer from '@/components/Footer';
 
 const imageSEO = 'https://empreguei.vercel.app/found-job.png'
 
@@ -88,9 +89,11 @@ const Page = () => {
                                 }}
                             />
                         </PageDetails>
+
                     ) : null
                 ))
             }
+            <Footer />
         </div>
     )
 }

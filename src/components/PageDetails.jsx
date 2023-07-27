@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const PageDetails = styled.div`
     .container {
-        background: ${({theme}) => theme.bg_alt};
+        background: ${({ theme }) => theme.bg_alt};
         width: 75%;
         margin: 2rem auto;
         padding: 1rem;
@@ -10,7 +10,7 @@ const PageDetails = styled.div`
         
         h1 {
             word-wrap: break-word;
-            color: ${({theme}) => theme.font_alt};
+            color: ${({ theme }) => theme.font_alt};
         }
 
         .advice {
@@ -19,21 +19,21 @@ const PageDetails = styled.div`
             padding: 1rem;
             font-size: 0.9rem;
             border-radius: 8px;
-            color: ${({theme}) => theme.font_alt};
+            color: ${({ theme }) => theme.font_alt};
         }
 
         .subAdvice {
             border-radius: 8px;
-            color: #8BE9FD;
+            color: ${({ theme }) => theme.font_ocean};
         }
 
         @media (prefers-color-scheme: dark) {
-            background: ${({theme}) => theme.bg_alt};
+            background: ${({ theme }) => theme.bg_alt};
 
             .advice {}
 
             h1 {
-                color: #8BE9FD;
+                color: ${({ theme }) => theme.font_ocean};
                 text-transform: uppercase;
             }
         }
@@ -49,7 +49,7 @@ const PageDetails = styled.div`
                 border-radius: 18px;
                 border-style: none;
                 padding: 0.5rem 2rem;
-                color: ${({theme}) => theme.bg_alt};
+                color: ${({ theme }) => theme.font_alt};
                 cursor: pointer;
 
                 :hover {
