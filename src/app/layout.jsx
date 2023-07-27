@@ -1,5 +1,8 @@
-import "./globals.css";
+'use client'
 import StyledComponentsRegistry from '../lib/registry';
+import GlobalStyle from "../../theme/globalStyles";
+import { ThemeProvider as CustomThemeProvider } from '../../theme/ThemeContext'; // Import the custom ThemeProvider
+import React from 'react';
 
 export const metadata = {
   title: "Empreguei by Kalify Inc.",
@@ -7,10 +10,16 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
   return (
     <html lang="pt">
       <body>
-        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        <StyledComponentsRegistry>
+          <CustomThemeProvider> {/* Use the custom ThemeProvider */}
+              <GlobalStyle />
+              {children}
+          </CustomThemeProvider>
+        </StyledComponentsRegistry>
       </body>
     </html>
   );

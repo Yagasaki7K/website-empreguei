@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const PageDetails = styled.div`
     .container {
-        background: var(--bg-light-alt);
+        background: ${({theme}) => theme.bg_alt};
         width: 75%;
         margin: 2rem auto;
         padding: 1rem;
@@ -10,7 +10,7 @@ const PageDetails = styled.div`
         
         h1 {
             word-wrap: break-word;
-            color: var(--font-light);
+            color: ${({theme}) => theme.font_alt};
         }
 
         .advice {
@@ -19,7 +19,7 @@ const PageDetails = styled.div`
             padding: 1rem;
             font-size: 0.9rem;
             border-radius: 8px;
-            color: var(--font-dark-alt);
+            color: ${({theme}) => theme.font_alt};
         }
 
         .subAdvice {
@@ -28,7 +28,7 @@ const PageDetails = styled.div`
         }
 
         @media (prefers-color-scheme: dark) {
-            background: var(--bg-dark-alt);
+            background: ${({theme}) => theme.bg_alt};
 
             .advice {}
 
@@ -49,7 +49,7 @@ const PageDetails = styled.div`
                 border-radius: 18px;
                 border-style: none;
                 padding: 0.5rem 2rem;
-                color: var(--bg-light-alt);
+                color: ${({theme}) => theme.bg_alt};
                 cursor: pointer;
 
                 :hover {

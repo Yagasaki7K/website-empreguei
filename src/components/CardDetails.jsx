@@ -35,7 +35,7 @@ const CardDetails = styled.div`
                 -webkit-box-orient: vertical;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                color: var(--font-ocean);
+                color: ${({theme}) => theme.font_ocean};
             }
 
             p {
@@ -55,8 +55,8 @@ const CardDetails = styled.div`
                 padding: 0.8rem;
                 border-radius: 8px;
                 border-style: none;
-                background: var(--bg-green);
-                color: var(--font-dark-alt);
+                background: ${({theme}) => theme.bg_green};
+                color: ${({theme}) => theme.font_alt};
                 font-style: normal;
                 font-weight: 700;
                 font-size: 0.8rem;
@@ -81,7 +81,7 @@ const CardDetails = styled.div`
     
     @media (prefers-color-scheme: dark) {
         .card {
-            background: var(--bg-dark-alt);
+            background: ${({theme}) => theme.bg_alt};
             box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
             border-radius: 32px;
 

@@ -10,10 +10,12 @@
     "yagasaki": "yarn upgrade-interactive --latest"
   },
   "dependencies": {
+    "antd": "^5.7.3",
     "dotenv": "^16.1.4",
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.5",
     "firebase": "^9.22.2",
+    "js-cookie": "^3.0.5",
     "next": "^13.4.5",
     "next-seo": "^6.0.0",
     "react": "18.2.0",

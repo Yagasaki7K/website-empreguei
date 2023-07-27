@@ -1,14 +1,14 @@
 import styled from 'styled-components'
 
 const SignUpDetails = styled.div`
-    background: var(--bg-light);
+    background: ${({theme}) => theme.bg};
 
     @media (prefers-color-scheme: dark) {
-        background: var(--bg-dark);
+        background: ${({theme}) => theme.bg};
     }
 
     .container {
-        background: var(--bg-light-alt);
+        background: ${({theme}) => theme.bg_alt};
         width: 75%;
         margin: 0rem auto;
         padding: 2rem 1rem;
@@ -16,7 +16,7 @@ const SignUpDetails = styled.div`
 
         h1 {
             word-wrap: break-word;
-            color: var(--font-light);
+            color: ${({theme}) => theme.font};
 
             @media (max-width: 768px) {
                 margin-top: -2rem;
@@ -26,14 +26,14 @@ const SignUpDetails = styled.div`
         }
         
         @media (prefers-color-scheme: dark) {
-            background: var(--bg-dark-alt);
+            background: ${({theme}) => theme.bg_alt};
 
             @media (max-width: 1080px) {
-                background: var(--bg-dark);
+                background: ${({theme}) => theme.bg_dark};
             }
 
             h1 {
-                color: var(--font-ocean);
+                color: ${({theme}) => theme.font_ocean};
                 text-transform: uppercase;
             }
         }
@@ -90,12 +90,12 @@ const SignUpDetails = styled.div`
                     width: 100%;
                     border-radius: 8px;
                     border-style: none;
-                    background: var(--bg-light);
-                    color: var(--font-dark-alt);
+                    background: ${({theme}) => theme.bg};
+                    color: ${({theme}) => theme.font_alt};
 
                     @media (prefers-color-scheme: dark) {
-                        background: var(--bg-form);
-                        color: var(--font-form);
+                        background: ${({theme}) => theme.bg_form};
+                        color: ${({theme}) => theme.font_form};
                     }
 
                     :focus {
@@ -110,7 +110,7 @@ const SignUpDetails = styled.div`
                     padding: 0.8rem;
                     border-radius: 8px;
                     border-style: none;
-                    color: var(--font-dark-alt);
+                    color: ${({theme}) => theme.font_alt};
                     font-style: normal;
                     font-weight: 700;
                     font-size: 0.8rem;
@@ -129,11 +129,11 @@ const SignUpDetails = styled.div`
                 }
 
                 .yellow {
-                    background: var(--bg-yellow);
+                    background: ${({theme}) => theme.bg_yellow};
                 }
 
                 .green {
-                    background: var(--bg-green);
+                    background: ${({theme}) => theme.bg_green};
                 }
             }
         }

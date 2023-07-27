@@ -30,6 +30,6 @@ const SlideDetails = styled.div`
         font-size: 2.5rem;
         line-height: 3rem;
         font-weight: bold;
-        color: var(--font-dark);
+        color: ${({theme}) => theme.font};
     }
 `

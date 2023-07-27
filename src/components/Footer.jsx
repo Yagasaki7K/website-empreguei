@@ -10,8 +10,8 @@ const Footer = () => {
 export default Footer
 
 const FooterDetails = styled.div`
-    background: var(--bg-light);
-    color: var(--font-dark);
+    background: ${({theme}) => theme.bg};
+    color: ${({theme}) => theme.font};
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -20,7 +20,7 @@ const FooterDetails = styled.div`
     padding: 2rem 0;
 
     @media (prefers-color-scheme: dark) {
-        background: var(--bg-dark);
-        color: var(--font-dark-alt);
+        background: ${({theme}) => theme.bg};
+        color: ${({theme}) => theme.font_alt};
     }
 `
